@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+	
+		<meta charset="utf-8"/>
+	
+			<title>Formulário de Alunos</title>
+		
+		<link rel="stylesheet" href="bootstrap.css"/>
+		
+	</head>
+	
+	<body>
+	
+		<h2 style="margin: 30px 126px 30px 126px">Formulário de Alunos</h2>
+		
+		<div class="container">
+		
+			<form class="row" action="" method="" target="" name="formAlunos" style="margin-right: 6px">
+		
+				<div class="col-4">
+					<label for="nomeAluno">Nome:</label>
+					<input id="nomeAluno" name="nomeAluno" class="form-control" type="text"/>
+				</div>
+		
+				<div class="col-3">
+					<label for="dataNasc">Data de Nascimento:</label>
+					<input id="dataNasc" name="dataNasc" class="form-control" type="date"/>
+				</div>
+		
+				<div class="col-2">
+					<label for="anoCurso">Ano que Cursa:</label>
+					<input id="anoCurso" name="anoCurso" class="form-control" type="number" min="0"/>
+				</div>
+		
+				<div class="col-2">
+					<label for="materiaPref">Matéria Preferida:</label>
+					<select id="materiaPref" name="materiaPref" class="form-control">
+						<option>Artes</option>
+						<option>Biologia</option>
+						<option>Educação Física</option>
+						<option>Filosofia</option>
+						<option>Física</option>
+						<option>Geografia</option>
+						<option>História</option>
+						<option>Língua Espanhola</option>
+						<option>Língua Inglesa</option>
+						<option>Língua Portuguesa</option>
+						<option>Literatura</option>
+						<option>Matemática</option>
+						<option>Química</option>
+						<option>Redação</option>
+						<option>Sociologia</option>
+					</select>
+				</div>
+				
+				<div class="col-1">
+					<button id="botaoSalvar" class="btn btn-success" style="margin-top: 32px">Salvar</button>
+				</div>
+		
+			</form>
+			
+			<br/>
+			
+			<table class="table table-striped">
+			
+				<colgroup>
+				
+					<col width="420">
+					<col width="220">
+					<col width="180">
+					<col width="180">
+					<col width="20">
+					<col width="20">
+					
+				</colgroup>
+				
+				<thead style="margin-right: 10px">
+				
+					<tr>
+						<th>Nome</th>
+						<th>Data de Nascimento</th>
+						<th>Ano que Cursa</th>
+						<th>Matéria Preferida</th>
+						<th>Editar</th>
+						<th>Excluir</th>
+					</tr>
+					
+				</thead>
+				
+				<tbody>
+				
+					<tr>
+						<td>Fulano da Silva</td>
+						<td>15/04/1996</td>
+						<td>5</td>
+						<td>Biologia</td>
+						<td><button class="btn btn-warning">Editar</button></td>
+						<td><button class="btn btn-danger">Excluir</button></td>
+					</tr>
+					
+					<tr>
+						<td>Cicrano de Oliveira</td>
+						<td>20/12/1999</td>
+						<td>2</td>
+						<td>Matemática</td>
+						<td><button class="btn btn-warning">Editar</button></td>
+						<td><button class="btn btn-danger">Excluir</button></td>
+					</tr>
+					
+					<tr>
+						<td>Beltrano de Souza</td>
+						<td>07/02/1994</td>
+						<td>7</td>
+						<td>Sociologia</td>
+						<td><button class="btn btn-warning">Editar</button></td>
+						<td><button class="btn btn-danger">Excluir</button></td>
+					</tr>
+					
+				</tbody>
+					
+			</table>
+		
+		</div>
+	
+	</body>
+	
+</html>
